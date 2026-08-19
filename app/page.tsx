@@ -150,6 +150,8 @@ export default function Home() {
               >
                 LinkedIn
               </a>
+            </div>
+          </div>
 
           <aside className="hero-card" aria-label="Research profile">
             <img
