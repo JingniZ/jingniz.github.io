@@ -135,15 +135,21 @@ export default function Home() {
               </a>
               <a
                 className="button button-secondary"
-                href="https://mail.google.com/mail/?view=cm&fs=1&to=jzhan354@syr.edu"
-                target="_blank"
-                rel="noreferrer"
+                href="mailto:jzhan354@syr.edu"
                 aria-label="Email Jingni Zhang"
               >
-                Get in touch
+                jzhan354@syr.edu
               </a>
-            </div>
-          </div>
+
+              <a
+                className="button button-secondary"
+                href="https://www.linkedin.com/in/jingnizhang/"
+                target="_blank"
+                rel="noreferrer"
+                aria-label="View Jingni Zhang on LinkedIn"
+              >
+                LinkedIn
+              </a>
 
           <aside className="hero-card" aria-label="Research profile">
             <img
@@ -158,7 +164,7 @@ export default function Home() {
               </div>
               <div className="hero-card-meta">
                 <span>Syracuse, New York</span>
-                <span>2026–27 job market</span>
+                <span>2026–27 Job Market</span>
               </div>
             </div>
           </aside>
