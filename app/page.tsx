@@ -119,7 +119,7 @@ export default function Home() {
       <div id="main-content">
         <section className="hero" id="top">
           <div className="hero-copy">
-            <p className="eyebrow">Public policy · clean technology · financial management</p>
+            <p className="eyebrow">Energy Policy · Clean Technology · Financial Management</p>
             <h1>
               Policy shapes technology.
               <span>Technology reshapes institutions.</span>
@@ -250,7 +250,7 @@ export default function Home() {
           <div className="section-shell projects-inner">
             <div>
               <div className="section-kicker light-kicker">Research pipeline</div>
-              <h2 id="projects-title">Works in progress</h2>
+              <h2 id="projects-title">Work in progress</h2>
             </div>
             <div className="project-cards">
               <article>
