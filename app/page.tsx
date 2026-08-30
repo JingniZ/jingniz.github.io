@@ -26,7 +26,7 @@ const research = [
     summary:
       "Develops a state-level benchmark for EV road-use charges that connects recurring road-service expenditure to the inherited role of motor-fuel taxation.",
     detail:
-      "Rapid electric-vehicle (EV) adoption weakens the motor-fuel-tax base while state road-service obligations persist. This study asks how governments can adapt a legacy revenue system when technological change erodes its tax base but not the public services it finances. I develop a state-specific service-finance continuity framework that separates recurring road-service costs, historical motor-fuel-tax responsibility, and EV travel as a transition pressure. Using a balanced panel of 50 states from 2016 through 2024, the study calibrates an EV mileage benchmark by multiplying recurring road cost per vehicle-mile by each state's fixed 2016-2018 motor-fuel-tax share of highway receipts. Correlated random-effects models distinguish annual within-state changes from persistent interstate differences in both components. The benchmark averages 0.705 real 2020 cents per mile and ranges from 0.054 to 3.396 cents across state-years. Variation reflects different combinations of service cost and financing responsibility. Federal-aid intensity is negatively associated with the motor-fuel-tax share, while persistent truck concentration and poor bridge condition show the most consistent positive associations with recurring road costs. The central implication is that the technology eroding the tax base need not determine the replacement rate. EV growth intensifies the need for a new payment channel, but service costs and financing portfolios set the benchmark. After accounting for network, infrastructure, and financing conditions, the EV-travel proxy shows no statistically distinguishable independent association with either component. A later responsibility period lowers the mean to 0.645 cents but preserves the broad interstate pattern. The results challenge a uniform response and support state-specific calibration with federal coordination on reporting, privacy, and interstate travel. More broadly, the framework offers a strategy for adapting legacy revenue systems when technological change erodes a tax base before the public obligations it supports disappear.",
+      "Electric vehicles (EVs) use public roads without paying state motor-fuel taxes through gasoline purchases, but roads still need maintenance and operation. This paper asks how states can establish a fiscal benchmark for a mileage charge when electrification weakens the tax base that has long supported highway finance. I develop a state-specific service-finance benchmark that links the rate to two observed features of each state: recurring expenditure on road maintenance, operations, pavement preservation, and bridge rehabilitation and replacement per mile traveled, and the share of highway receipts historically supplied by state motor-fuel taxes. From a pay-per-use perspective, the benchmark applies the historical financing share to selected recurring road costs rather than replacing all motor-fuel-tax receipts. Using a balanced panel of all 50 states from 2016 through 2024, I estimate an average benchmark of 0.705 real 2020 cents per mile. The calibration results reveal that state averages range from 0.102 cents in New Jersey to 2.454 cents in West Virginia. This variation shows that a uniform national rate would overlook substantial differences in states’ road costs and revenue choices. Additional regression analyses find that persistent truck concentration and poor bridge condition have positive relationships with recurring spending per mile, while federal aid corresponds with less reliance on state motor-fuel taxes. The model sequence also provides some evidence that states with greater EV travel exposure rely less on motor-fuel taxes, although this relationship weakens after road-use and alternative financing conditions enter. EV adoption therefore remains central to the design problem because it shifts travel beyond the decreasing gasoline-tax base, and states’ road-service costs still rely on that base. For practitioners, the benchmark provides a transparent reference that states can implement through multiyear cost averaging and scheduled updates rather than annual statutory rate changes.",
     links: [],
   },
   {
@@ -110,7 +110,12 @@ export default function Home() {
           <a href="#about">About</a>
           <a href="#research">Research</a>
           <a href="#teaching">Teaching</a>
-          <a className="nav-cv" href="/jingni-zhang-cv.pdf" download>
+          <a
+            className="nav-cv"
+            href="/jingni-zhang-cv.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             CV
           </a>
         </nav>
@@ -130,9 +135,7 @@ export default function Home() {
               fiscal institutions as electric vehicles transform transportation.
             </p>
             <div className="hero-actions">
-              <a className="button button-primary" href="#research">
-                Explore my research
-              </a>
+
               <a
                 className="button button-secondary"
                 href="mailto:jzhan354@syr.edu"
@@ -249,8 +252,8 @@ export default function Home() {
         <section className="projects-band" aria-labelledby="projects-title">
           <div className="section-shell projects-inner">
             <div>
-              <div className="section-kicker light-kicker">Research pipeline</div>
-              <h2 id="projects-title">Work in progress</h2>
+              <div>
+                <h2 id="projects-title">Work in progress</h2>
             </div>
             <div className="project-cards">
               <article>
