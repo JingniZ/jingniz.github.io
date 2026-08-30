@@ -252,8 +252,7 @@ export default function Home() {
         <section className="projects-band" aria-labelledby="projects-title">
           <div className="section-shell projects-inner">
             <div>
-              <div>
-                <h2 id="projects-title">Work in progress</h2>
+              <h2 id="projects-title">Work in progress</h2>
             </div>
             <div className="project-cards">
               <article>
