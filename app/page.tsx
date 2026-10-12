@@ -204,11 +204,11 @@ export default function Home() {
                 emerging technologies grow rapidly.
               </p>
               <div className="interest-list" aria-label="Research interests">
-                <span>Energy policy</span>
-                <span>Technology &amp; innovation</span>
-                <span>Electric vehicles</span>
-                <span>Tax design</span>
-                <span>Financial management</span>
+                <span>Energy Policy</span>
+                <span>Technology &amp; Innovation</span>
+                <span>Electric Vehicles</span>
+                <span>Tax Design</span>
+                <span>Financial Management</span>
                 <span>Service Delivery</span>
               </div>
             </div>
