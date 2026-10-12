@@ -33,12 +33,22 @@ const research = [
     number: "03",
     status: "Working paper",
     title:
-      "When Relationships Translate into Outcomes: Relational Governance in Third-Party Implementation",
+      "From Repeated Interaction to Program Delivery: Relational Governance in Quasi-Market Implementation",
     authors: "with Yiying Chen",
     summary:
       "Studies when relational governance improves policy achievement in public programs delivered through third-party organizations.",
     detail:
       "How do relationships with market intermediaries shape program delivery when government neither contracts with nor directly controls the organizations responsible for implementation? Existing research largely examines contemporaneous relational conditions within public contracts. We instead theorize accumulated relational experience as an informal governance resource in regulatory and certification-based programs. Repeated agency-intermediary exchange should improve delivery by developing program-specific knowledge, mutual expectations, and communication routines, with greater benefits when formal governance is least able to address implementation demands. We test this argument using an installer-quarter panel of 890 firms participating in New York State solar incentive programs from 2000 to 2025 and a shift-share instrumental-variable design. Accumulated agency-specific experience increases subsequent program-supported capacity; the effect is stronger when projects require more sustained coordination, provider markets are more concentrated, and intermediaries serve more disadvantaged communities. The findings extend relational governance beyond contracting, demonstrate the importance of measuring relationships cumulatively, and identify when accumulated relationships make a larger contribution to third-party implementation.",
+    links: [],
+  },
+  {
+    number: "04",
+    status: "Working paper",
+    title:
+      "Electric Vehicle Adoption and State Gasoline Tax Revenue in the United States",
+    authors: "with Pengju Zhang",
+    summary: "",
+    detail: "",
     links: [],
   },
 ];
@@ -124,7 +134,7 @@ export default function Home() {
       <div id="main-content">
         <section className="hero" id="top">
           <div className="hero-copy">
-            <p className="eyebrow">Energy Policy · Clean Technology · Financial Management</p>
+            <p className="eyebrow">Energy Policy · Clean Technology · Financial Management · Service Delivery</p>
             <h1>
               Policy shapes technology.
               <span>Technology reshapes institutions.</span>
@@ -132,7 +142,7 @@ export default function Home() {
             <p className="hero-intro">
               I am a Ph.D. candidate at Syracuse University studying how
               governments encourage clean-technology innovation and redesign
-              fiscal institutions as electric vehicles transform transportation.
+              institutions to maintain their capacity to deliver public services.
             </p>
             <div className="hero-actions">
 
@@ -182,16 +192,16 @@ export default function Home() {
             <div className="about-copy">
               <p>
                 My research sits at the intersection of environmental policy,
-                technological innovation, public finance, and the policy process.
+                technological innovation, public finance, and policy management.
                 Electric vehicles provide a central case: governments must support
-                innovation and adoption while also updating tax systems built around
-                gasoline consumption.
+                innovation and adoption while also updating their institutional design
+                for fiscal sustainability and service capacity.
               </p>
               <p>
                 Across my projects, I combine policy theory with quantitative analysis
                 to study how policy portfolios shape invention, how knowledge moves
                 across innovation networks, and how public institutions respond when
-                emerging technologies unsettle established fiscal arrangements.
+                emerging technologies grow rapidly.
               </p>
               <div className="interest-list" aria-label="Research interests">
                 <span>Energy policy</span>
@@ -199,7 +209,7 @@ export default function Home() {
                 <span>Electric vehicles</span>
                 <span>Tax design</span>
                 <span>Financial management</span>
-                <span>Policy diffusion</span>
+                <span>Service Delivery</span>
               </div>
             </div>
           </div>
@@ -208,7 +218,7 @@ export default function Home() {
         <section className="research section-shell" id="research">
           <div className="section-heading">
             <div>
-              <div className="section-kicker">Selected research</div>
+              <div className="section-kicker">Working papers</div>
               <h2>Work on innovation, institutions, and implementation</h2>
             </div>
             <a
@@ -229,11 +239,13 @@ export default function Home() {
                   <p className="paper-status">{paper.status}</p>
                   <h3>{paper.title}</h3>
                   {paper.authors ? <p className="paper-authors">{paper.authors}</p> : null}
-                  <p className="paper-summary">{paper.summary}</p>
-                  <details>
-                    <summary>Abstract</summary>
-                    <p>{paper.detail}</p>
-                  </details>
+                  {paper.summary ? <p className="paper-summary">{paper.summary}</p> : null}
+                  {paper.detail ? (
+                    <details>
+                      <summary>Abstract</summary>
+                      <p>{paper.detail}</p>
+                    </details>
+                  ) : null}
                   {paper.links.length ? (
                     <div className="paper-links">
                       {paper.links.map((link) => (
@@ -256,13 +268,8 @@ export default function Home() {
             </div>
             <div className="project-cards">
               <article>
-                <span>Fiscal adaptation</span>
-                <h3>Electric Vehicle and State Gasoline Tax Revenue in the United States</h3>
-                <p>with Pengju Zhang</p>
-              </article>
-              <article>
                 <span>Knowledge networks</span>
-                <h3>Who Drives Electric Vehicle Knowledge? Government Support, Spillovers, and Innovation Networks</h3>
+                <h3>Does Government Support Knowledge Spillovers? The Evidence from Electric Vehicle Innovation</h3>
                 <p>Dissertation project</p>
               </article>
             </div>
